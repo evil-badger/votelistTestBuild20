@@ -1,0 +1,33 @@
+
+.SmilesItem{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.SmilesBlock{
+    background-color: bisque;
+    display: flex;
+    margin:auto;
+    max-width: 800px;
+    gap:10px;
+}
+
+
+.SmilesWrap{
+    display: flex;
+    margin:auto;
+    max-width: 800px;
+    flex-direction: column;
+
+}
+
+
+.SmilesBestItem{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 20px auto;
+}
