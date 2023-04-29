@@ -1,0 +1,20 @@
+export const smilesList=[
+    {
+        "title":"happyness",
+        "id":1,
+        "url":"http://clipart-library.com/images/BTarpR89c.jpg",
+        "vote":0
+    },
+    {
+        "title":"sad",
+        "id":2,
+        "url":"https://previews.123rf.com/images/branche/branche1705/branche170500013/77751219-sad-smile-vector-icon.jpg",
+        "vote":0
+    },
+    {
+        "title":"thinking",
+        "id":3,
+        "url":"https://t4.ftcdn.net/jpg/02/52/26/97/240_F_252269794_tx8f1Z4UdYCQKP52azm8qH8ATuwtAk8t.jpg",
+        "vote":0
+    },
+]
