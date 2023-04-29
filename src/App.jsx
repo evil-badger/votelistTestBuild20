@@ -56,7 +56,6 @@ function App() {
 
       </div>
       <div>
-        <SmilesWinnerButton/>
         <SmilesItemBest
           id={result.id}
           key={result.id}
