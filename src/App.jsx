@@ -10,14 +10,7 @@ import SmilesItemBest from './components/SmilesItemBest';
 function App() {
 
   const [smilesListData, setSmilesList] = useState(smilesList);
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
 
-  function handleButtonClick(selectedItem) {
-    setIsButtonClicked(true);
-    setSelectedItem(selectedItem);
-  }
-  
   const handleUpdateCounter = (id) => {
     const copyList = [...smilesListData];
     copyList.forEach((elem) => {
@@ -37,7 +30,6 @@ function App() {
   }
 
   const result = getMaxGrade();
-  console.log(result);
 
   return (
     <>
@@ -58,7 +50,7 @@ function App() {
 
       </div>
       <div>
-        <SmilesWinnerButton getMax={getMaxGrade} />
+        <SmilesWinnerButton/>
         <SmilesItemBest
           id={result.id}
           key={result.id}

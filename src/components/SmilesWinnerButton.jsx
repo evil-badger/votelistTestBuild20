@@ -1,10 +1,18 @@
-import SmilesItem from "./SmilesItem";
+const SmilesWinnerButton = (props) => {  
+  console.log(props)
 
-const SmilesWinnerButton = (props) => {
-
+  const test=()=>{
+    console.log('test')
+  }
   return (
-      <button>YTYYYYYYYYYYY</button>
+      <>
+      <button onClick={test}>Обновить результат</button>
+      </>
+      
+      
     )
   }
 
 export default SmilesWinnerButton
+
+
