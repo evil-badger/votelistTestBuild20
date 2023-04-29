@@ -10,6 +10,12 @@ import SmilesItemBest from './components/SmilesItemBest';
 function App() {
 
   const [smilesListData, setSmilesList] = useState(smilesList);
+  const [showBest, setShowBest] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowBest(true);
+  };
+  
 
   const handleUpdateCounter = (id) => {
     const copyList = [...smilesListData];
@@ -58,6 +64,13 @@ function App() {
           url={result.url}
         />
       </div>
+      <div className="App">
+      <SmilesWinnerButton onButtonClick={handleButtonClick} />
+      {showBest && <SmilesItemBest id={result.id}
+          key={result.id}
+          title={result.title}
+          url={result.url} />}
+    </div>
 
 
     </>
